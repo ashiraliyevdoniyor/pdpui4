@@ -1,0 +1,25 @@
+import 'package:flutter/material.dart';
+class HomePage extends StatefulWidget {
+  static final String id="home_page";
+  const HomePage({Key? key}) : super(key: key);
+
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Colors.white,
+      body: Center(
+        child: Container(
+          color: Colors.black,
+          child: Text('asdff',style: TextStyle(color: Colors.blueAccent),),
+          height: 200,
+          width: 200,
+        ),
+      ),
+    );
+  }
+}
